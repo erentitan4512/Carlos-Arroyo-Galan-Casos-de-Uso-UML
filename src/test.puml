@@ -1,3 +1,14 @@
 @startuml
-:Cliente: --> (Mostrar menú)
+actor cliente as C
+actor restaurante as R
+
+R --> (Entregar Comida)
+
+rectangle  {
+  usecase "Mostrar Menú" as UC1
+  usecase "Pedir comida" as UC2
+  }
+C --> UC1
+C --> UC2
+R --> UC1
 @enduml
