@@ -1,9 +1,9 @@
 @startuml
-:New Actor: -- (Identificarse)
-:New Actor: -- (Pagar)
-:New Actor: -- (Elegir Mensajero)
-:New Actor: -- (Confirmar)
-(Pagar) <|-- (Pagar Con Tarjeta)
-(Pagar) <|-- (Pagar Con Transferencia)
-(Identificarse) <.. (Registrarse)
+:Usuario: <|-- :Administrador:
+:Usuario: -- (Iniciar Sesion)
+:Usuario: -- (Recuperar Contraseña)
+:Usuario: -- (Modificar Contraseña)
+:Usuario: -- (Cerrar Sesion)
+:Administrador: -- (Registrar Usuario)
+:Administrador: -- (Instalar Programa)
 @enduml
