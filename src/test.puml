@@ -3,6 +3,6 @@ actor cliente as C
 
 C-->(Confirmar Pedido)
 C-->(Cancelar Pedido)
-(Cancelar Pedido) --> (Devolver Cambio) : <<include>>
-(Confirmar Pedido) --> (Devolver Cambio) : <<include>>
+(Cancelar Pedido) ..> (Devolver Cambio) : <<include>>
+(Confirmar Pedido) ..> (Devolver Cambio) : <<include>>
 @enduml
