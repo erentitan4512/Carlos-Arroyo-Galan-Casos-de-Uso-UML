@@ -1,3 +1,5 @@
 @startuml
-(Acceder)<..(Registrarse) : <<extend>>
+(Pagar)
+(Pagar Con Tarjeta) --|> (Pagar)
+(Pagar en Efectivo) --|> (Pagar)
 @enduml
