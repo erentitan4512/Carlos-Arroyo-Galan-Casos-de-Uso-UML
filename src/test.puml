@@ -1,9 +1,6 @@
 @startuml
-:Usuario: <|-- :Administrador:
-:Usuario: -- (Iniciar Sesion)
-:Usuario: -- (Recuperar Contraseña)
-:Usuario: -- (Modificar Contraseña)
-:Usuario: -- (Cerrar Sesion)
-:Administrador: -- (Registrar Usuario)
-:Administrador: -- (Instalar Programa)
+:Ciudadano: -- (Registrar Entrada)
+(Registrar Entrada) <.. (Tomar Huellas) : <<extend>>
+:Ciudadano Extranjero: --|> :Ciudadano:
+(Tomar Huellas) -- :Ciudadano Extranjero:
 @enduml
