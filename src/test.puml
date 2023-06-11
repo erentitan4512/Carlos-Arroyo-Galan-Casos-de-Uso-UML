@@ -1,3 +1,0 @@
-@startuml
-:Cliente: --> (Mostrar menú)
-@enduml
