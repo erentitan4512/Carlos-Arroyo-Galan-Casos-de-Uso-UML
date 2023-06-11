@@ -1,9 +1,9 @@
 @startuml
-:Cliente: -- (Reservar Vuelo)
-:Cliente: -- (Pedir Azucar)
-:Cliente: -- (Pedir Producto)
-:Cliente: -- (Cancelar)
-(Cancelar) --> (Devolver Dinero) : <<include>>
-(Pedir Producto) --> (Devolver Dinero) : <<include>>
-
+:New Actor: -- (Identificarse)
+:New Actor: -- (Pagar)
+:New Actor: -- (Elegir Mensajero)
+:New Actor: -- (Confirmar)
+(Pagar) <|-- (Pagar Con Tarjeta)
+(Pagar) <|-- (Pagar Con Transferencia)
+(Identificarse) <.. (Registrarse)
 @enduml
