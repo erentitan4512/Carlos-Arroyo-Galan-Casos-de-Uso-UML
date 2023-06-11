@@ -1,5 +1,9 @@
 @startuml
 :Cliente: -- (Reservar Vuelo)
-:ClienteVIP: --|> :Cliente:
-:ClienteVIP: -- (Elegir Asientos)
+:Cliente: -- (Pedir Azucar)
+:Cliente: -- (Pedir Producto)
+:Cliente: -- (Cancelar)
+(Cancelar) --> (Devolver Dinero) : <<include>>
+(Pedir Producto) --> (Devolver Dinero) : <<include>>
+
 @enduml
