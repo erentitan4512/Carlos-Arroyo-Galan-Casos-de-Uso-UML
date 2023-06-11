@@ -1,5 +1,5 @@
 @startuml
-(Pagar)
-(Pagar Con Tarjeta) --|> (Pagar)
-(Pagar en Efectivo) --|> (Pagar)
+:Cliente: -- (Reservar Vuelo)
+:ClienteVIP: --|> :Cliente:
+:ClienteVIP: -- (Elegir Asientos)
 @enduml
