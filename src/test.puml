@@ -1,6 +1,8 @@
 @startuml
-:Ciudadano: -- (Registrar Entrada)
-(Registrar Entrada) <.. (Tomar Huellas) : <<extend>>
-:Ciudadano Extranjero: --|> :Ciudadano:
-(Tomar Huellas) -- :Ciudadano Extranjero:
+(Sacar Dinero) <<+ Solicitud Hecha>>
+note "description condicion <<historia sospechosa>> punto de extension: solicitud hecha" as N2
+(Retener Tarjeta)
+(Sacar Dinero) --> N2 : <<Extend>>
+(Retener Tarjeta) --> N2
+
 @enduml
